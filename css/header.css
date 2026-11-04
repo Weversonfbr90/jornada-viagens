@@ -16,6 +16,7 @@ header {
 
 .navegation-menu {
   margin-top: 24px;
+  width: 476px;
 }
 
 input[type="checkbox"]:checked ~ nav {
@@ -45,4 +46,30 @@ nav {
 .list-links li a {
     color: var(--text-secondary-color);
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navegation-menu {
+    margin-top: 0;
+  }
+
+  .navegation-menu label {
+    display: none;
+  }
+  
+  .navegation-menu nav {
+    display: block;
+  }
+
+  .navegation-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  
+  .navegation-menu li {
+    margin: 0;
+  }
+
 }
